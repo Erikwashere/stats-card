@@ -365,8 +365,8 @@ body {
 
 .container {
   margin: 0 auto;
-  margin-top: 30%;
-  margin-bottom: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   width: 90%;
   background: #1b1938;
   border-radius: 7px;
@@ -423,6 +423,27 @@ span {
   border-radius: 7px 7px 0 0;
   background-image: linear-gradient(rgba(92, 9, 144, 0.6), rgba(92, 9, 144, 0.6)), url("/images/image-header-mobile.jpg");
   background-size: 100% 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 7px;
+  }
+
+  .image-card {
+    width: 80%;
+    height: 350px;
+    border-radius: 7px;
+    background-image: linear-gradient(rgba(170, 92, 219, 0.7), rgba(170, 92, 219, 0.7)), url("/images/image-header-desktop.jpg");
+    background-size: no-repeat 100%;
+  }
+
+  .main-content {
+    order: 5;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
